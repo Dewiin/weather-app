@@ -1,0 +1,32 @@
+#main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#grid-container {
+    height: 85%;
+    width: 35%;
+    min-width: 350px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--blurred-background);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur); 
+    transition: transform 200ms;
+    min-width: 275px;
+}
+.grid-item:hover {
+    transform: scale(1.025);
+}
+
+#weather-future-forecasts {
+    grid-column: 1/3;
+}

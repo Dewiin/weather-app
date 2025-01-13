@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-color: rgb(200,200,200);
+    --header-height: 15vh;
+    --content-height: 100%;
+    --font-family: "Nunito", serif;
+    --blurred-background: rgb(0, 0, 0, 0.4);
+    --blur: blur(5px);
+}
+
+* {
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--font-color);
+    cursor: default;
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -13,4 +33,43 @@ body {
     height: 110%;
     width: 110%;
     background-size: cover;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+#home-bg.fade-out {
+    opacity: 0;
+}
+
+#search-bar-container {
+    height: var(--header-height);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-search-bar {
+    min-width: 200px;
+    width: 25vw;
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+
+    /* Background blur */
+    background: var(--blurred-background); 
+    backdrop-filter: var(--blur); 
+    -webkit-backdrop-filter: var(--blur); 
+
+    /* Additional styling for aesthetics */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    transition: transform 250ms;
+}
+#home-search-bar:hover {
+    transform: scale(1.1);
 }

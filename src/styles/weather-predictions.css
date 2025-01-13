@@ -1,0 +1,21 @@
+#weather-future-forecasts {
+    text-align: center;
+}
+
+#weather-future-forecasts ul {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+}
+#weather-future-forecasts ul li>p {
+    margin: 0;
+}
+#weather-future-forecasts ul li>img {
+    width: 50%;
+    transition: transform 100ms;
+}
+#weather-future-forecasts ul li>img:hover {
+    transform: scale(1.25);
+}

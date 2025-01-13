@@ -1,0 +1,33 @@
+#weather-degrees-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#weather-degrees-image > *{
+    align-content: center;
+}
+
+#weather-degrees-image > p {
+    margin: 0;
+}
+
+.degrees {
+    font-size: 60px;
+}
+
+.weather-icon {
+    width: 50%;
+    opacity: 0.85;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+}
