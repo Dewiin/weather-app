@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "deploy": "npm run dep-merge-build && npm run dep-add-commit && npm run dep-push && npm run checkout-main",
-    "dep-merge-build": "git checkout -b gh-pages && git merge main --no-edit && npm run build",
+    "dep-merge-build": "git checkout gh-pages && git merge main --no-edit && npm run build",
     "dep-add-commit": "git add dist -f && git commit -m \"Deployment commit\"",
     "dep-push": "git subtree push --prefix dist origin gh-pages",
     "checkout-main": "git checkout main"
