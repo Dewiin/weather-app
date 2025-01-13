@@ -16,10 +16,10 @@
     cursor: default;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ body {
 }
 
 #home-search-bar {
-    min-width: 200px;
+    min-width: 250px;
     width: 25vw;
     padding: 15px 15px;
     font-size: 16px;
@@ -73,3 +73,9 @@ body {
 #home-search-bar:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 960px) {
+    html, body {
+        overflow: auto;
+    }
+} 
