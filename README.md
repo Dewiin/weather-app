@@ -2,7 +2,7 @@
 
 <div align="center">
     <img src='./src/assets/weather-logo.png' width=150>
-    <h1>Weather!</h1>
+    <h1>Weather Me</h1>
 </div>
 
 <details open>
