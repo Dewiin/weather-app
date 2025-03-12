@@ -31,7 +31,7 @@ A weather application from the Odin curriculum built using HTML, CSS, and JavaSc
 - 🌡️ Temperature Display – Shows current temperature in Fahrenheit.
 - 💧 Humidity & Conditions – Get details like humidity, wind speed, and sky conditions.
 - 🌙 Themes – Background themes change for different times of day.
-- 🎨 Responsive Design – Works smoothly on both desktop and mobile.
+- 🎨 Responsive Design – Works smoothly on both desktop and mobile. 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 ## Built With 
