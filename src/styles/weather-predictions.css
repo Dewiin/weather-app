@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+#weather-future-forecasts h2 {
+    margin-top: 0;
+}
+
 #weather-future-forecasts ul {
     display: grid;
     list-style: none;
