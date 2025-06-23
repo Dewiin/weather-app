@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 # Weather App 
 
 <div align="center">
@@ -17,6 +19,7 @@
     <li>
     <a href="#installation--setup">Installation & Setup</a>
     </li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
 </ol>
@@ -70,6 +73,14 @@ npm run dev
 ## Future Improvements
 - [ ] Add Celsius display
 - [ ] Add auto-complete in search bar
+<p align="right"><a href="#readme-top">Back to top</a></p>
+
+
+## Demo
+<div align="center">
+    <img src="./src/assets/weather_demo.gif">
+</div>
+
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 
